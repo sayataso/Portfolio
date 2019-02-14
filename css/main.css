@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html, body {
     margin: 0;
@@ -23,6 +24,18 @@ header {
     height: 63px;
 }
 
+.title {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+.sub_title {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
 .main {
     width: 100%;
     height: auto;
@@ -30,33 +43,56 @@ header {
 
 .top_img {
     width: 100%;
-    height: 692px;
-    
+    height: 690px;
     background-image: url("../images/top.jpg");
-    
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-.top_img img {
-    /* width: 100%;
-    opacity: 0.5;
-    display: block; */
-}
-
-.main h1 {
-    margin: auto;
+.main .top_img .title {
     position: relative;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
 }
 
-.main h3 {
-    margin: auto;
+.main .top_img .sub_title {
     position: relative;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+}
+
+.introduce {
+    width: 100%;
+    height: auto;
+    background: #D4AAAC;
+}
+
+.introduce .title {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.prof_image {
+    width: 140px;
+    height: auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.prof_sentense {
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+.work {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+}
+
+.work .title {
+    color: #000000;
+    font-size: 28px;
 }
 
 footer {
@@ -74,12 +110,12 @@ footer {
 
 @media screen and (min-width: 1024px) and (max-width:1025px) {
 
-    .main h1 {
-        bottom: 334px;
+    .main .top_img .title {
+        top: 44%;
     }
 
-    .main h3 {
-        bottom: 298px;
+    .main .top_img .sub_title {
+        top: 51%;
     }
 }
 
@@ -97,20 +133,30 @@ footer {
     .header {
     }
 
-    .main h1 {
+    .top_img .title {
         width: 585px;
-        /* bottom: 414px; */
         top: 44%;
         font-size: 48px;
         letter-spacing: 36px;
     }
     
-    .main h3 {
+    .top_img .sub_title {
         width: 353px;
-        /* bottom: 374px; */
         top: 51%;
         font-size: 28px;
         letter-spacing: 8px;
+    }
+
+    .introduce .title {
+        width: 210px;
+        padding-top: 100px;
+        letter-spacing: 14px;
+    }
+
+    .work .title {
+        width: 112px;
+        padding-top: 100px;
+        letter-spacing: 14px;
     }
     
 }
@@ -123,21 +169,21 @@ footer {
     }
 
     .top_img {
-        height: 692px;
+        height: 690px;
         background-image: url("../images/top2.jpg");
         background-repeat: no-repeat;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width:768px) {
-    .main h1 {
+    .top_img .title {
         width: 465px;
         top: 44%;
         font-size: 38px;
         letter-spacing: 29px;
     }
 
-    .main h3 {
+    .top_img .sub_title {
         width: 225px;
         top: 48%;
         font-size: 24px;
@@ -147,13 +193,13 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-    .main h1 {
+    .top_img .title {
         top: 40%;
         width: 267px;
         font-size: 44px;
     }
 
-    .main h3 {
+    .top_img .sub_title {
         top: 43%;
         width: 210px;
         font-size: 26px;
@@ -163,32 +209,32 @@ footer {
 
 @media screen and (min-width: 360px) and (max-width:411px) {
     .top_img {
-        height: 692px;
+        height: 690px;
         background-image: url("../images/top3.jpg");
         background-repeat: no-repeat;
     }
 
-    .main h1 {
+    .top_img .title {
         top: 34%;
     }
 
-    .main h3 {
+    .top_img .sub_title {
         top: 38%;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width:359px) {
     .top_img {
-        height: 692px;
+        height: 690px;
         background-image: url("../images/top3.jpg");
         background-repeat: no-repeat;
     }
 
-    .main h1 {
+    .top_img .title {
         top: 28%;
     }
 
-    .main h3 {
+    .top_img .sub_title {
         top: 31%;
     }
 }
