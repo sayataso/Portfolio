@@ -43,6 +43,10 @@ header {
     color: #807B7A;
 }
 
+.menu a:hover {
+    color: #C5AEAE;
+}
+
 .title {
     margin: auto;
     font-family: 'Montserrat', sans-serif;
