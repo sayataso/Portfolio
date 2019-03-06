@@ -7,7 +7,7 @@
 }
 
 .introduce .title {
-    width: 504px;
+    width: 476px;
 }
 
 .intro_cont {
@@ -38,6 +38,11 @@
 }
 
 @media screen and (min-width: 768px) and (max-width:768px) {
+
+    .introduce .title {
+        width: 456px;
+    }
+
     .intro_cont {
         margin-top: 40px;
         padding-bottom: 60px;
@@ -52,7 +57,7 @@
     }
 
     .introduce .title {
-        width: 266px;
+        width: 254px;
         font-size: 26px;
         text-align: center;
     }

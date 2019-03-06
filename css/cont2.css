@@ -3,20 +3,47 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 .introduce .title {
-    width: 294px;
+    width: 280px;
 }
 
 .recipe {
     margin: auto;
 }
 
+.sentense  a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sentense  a:hover {
+    text-decoration: underline;
+}
+
+.sentense  a::before {
+    content:"";
+	display:inline-block;
+    width: 20px;
+    height: 14px;
+	background:url(../images/downroad.png) no-repeat;
+	background-size:contain;
+}
+
 @media screen and (min-width: 768px) and (max-width:768px) {
+    
+    .introduce .title {
+        width: 268px;
+    }
+    
     .sentense {
         margin-top: 60px;
     }
 }
 
 @media screen and (max-width: 480px) {
+
+    .introduce .title {
+        width: 254px;
+    }
 
     .intro_cont {
         margin-top: 0px;
